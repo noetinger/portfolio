@@ -1,18 +1,25 @@
+h1{
+    font-family: sans-serif;
+    font-size: 50px;
+}
 
 h2{
-    color: #4aaaa5;
-    font-size: 14px;
+    font-family: sans-serif;
+    font-size: 36px;
 }
 
 h3{
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: bold; 
+    font-family: sans-serif;
+    font-size: 28px;
+}
+
+.nav-link{
+    font-family: sans-serif;
+    color: black;
 }
 
 #image1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     position: absolute;
     background-color: #4aaaa5;
     width: 210px;
