@@ -22,112 +22,144 @@
     <link rel="stylesheet" type=text/css href="style.css">
 </head>
 
-<body background="images/gravel.png">
+<body style="background-color: #F7F7F7">
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg" style="background-color: #ffffff; border-bottom: 2px solid #cccccc;">
-        <a class="navbar-brand p-3 mb-1 bg-info text-white h1" href="index.html">Nick Oetinger</a>
+    <nav class="navbar navbar-expand-lg" style="background-color: #F7F7F7; border-bottom: 2px solid #cccccc;">
+        <a class="navbar-brand p-1 mb-1" style="color: black; font-family: sans-serif;" href="index.html">Nick
+            Oetinger</a>
 
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <a href="https://www.linkedin.com/in/nicholas-oetinger-070456157/">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <div id="icon-spacer"></div>
+        <a href="https://github.com/noetinger">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
             <i class="fas fa-bars"></i>
+
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+            <ul class="navbar-nav" align="right">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html" style="color: black">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html" style="color: black">Portfolio </a>
+                    <a class="nav-link" href="portfolio.html">Portfolio </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html" style="color: black">Contact</a>
-                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li> -->
+            </ul>
         </div>
     </nav>
 
     <!--Main Content Section-->
-
-    <div class="container" style="margin-top: 25px; width: 960px; padding: 15px; background-color:white">
-        <h1 style="color: #4aaaa5;">Portfolio</h1>
-        <h2>Click the Image to view the App!</h2>
-        <h2>Click the Title to view the code!</h2>
-
-        <div class="row" style="padding-top:15px">
-            <div class="col-md-4">
-                <a href="https://noetinger.github.io/Weather-Wear/">
-                    <img src="http://placehold.it/200x200" alt="Placeholder" class="img-thumbnail">
+    <div class="row" style="background-color:#EBF1F2; border-bottom: 2px solid #cccccc">
+        <div class="col-md-12" align="center">
+            <br>
+            <img id="my-image" src="images/AmericanFlag.jpg" alt="Nick Oetinger">
+            <h1 style="color: black;">Nick Oetinger</h1>
+            <h2 style="color: #737373;"> Full Stack Web Developer</h2>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8" align="center">
+            <br>
+            <h3>Portfolio</h3>
+            <h4>Click the Image to view the App, or click the Title to view the code!</h4>
+        </div>
+    </div>
+    <!--Portfolio Section-->
+    <div class="row" style="padding-top:15px">
+        <div class="col-md-4" align="center">
+            <a href="https://noetinger.github.io/Weather-Wear/">
+                <img id="portfolio" src="images/weather-wear.png" alt="weather-wear" class="img-thumbnail">
+            </a>
+            <div id="image1">
+                <a href="https://github.com/noetinger/Weather-Wear">
+                    <h5>Weather Wear</h5>
                 </a>
-                <div id="image1">
-                    <a href="https://github.com/noetinger/Weather-Wear">
-                        <h3>Weather Wear</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <a href="">
-                    <img src="http://placehold.it/200x200" alt="Placeholder" class="img-thumbnail">
-                </a>
-                <div id="image1">
-                    <a href="">
-                        <h3>Train Scheduler</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <a href="">
-                    <img src="http://placehold.it/200x200" alt="Placeholder" class="img-thumbnail">
-                </a>
-                <div id="image1">
-                    <a href="">
-                        <h3>Trivia Game</h3>
-                    </a>
-                </div>
             </div>
         </div>
-
-        <div class="row" style="padding-top:35px">
-            <div class="col-md-4">
-                <a href="">
-                    <img src="http://placehold.it/200x200" alt="Placeholder" class="img-thumbnail">
+        <div class="col-md-4" align="center">
+            <a href="https://noetinger.github.io/trainScheduler/">
+                <img id="portfolio" src="images/trainScheduler.png" alt="train-scheduler" class="img-thumbnail">
+            </a>
+            <div id="image1">
+                <a href="https://github.com/noetinger/trainScheduler">
+                    <h5>Train Scheduler</h5>
                 </a>
-                <div id="image1">
-                    <a href="">
-                        <h3>Word Guess</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <a href="">
-                    <img src="http://placehold.it/200x200" alt="Placeholder" class="img-thumbnail">
-                </a>
-                <div id="image1">
-                    <a href="">
-                        <h3>Gif Tastic</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <a href="">
-                    <img src="http://placehold.it/200x200" alt="Placeholder" class="img-thumbnail">
-                </a>
-                <div id="image1">
-                    <a href="">
-                        <h3>Magic 8 Ball</h3>
-                    </a>
-                </div>
             </div>
         </div>
+        <div class="col-md-4" align="center">
+            <a href="https://noetinger.github.io/TriviaGame/">
+                <img id="portfolio" src="images/trivia.png" alt="trivia-game" class="img-thumbnail">
+            </a>
+            <div id="image1">
+                <a href="https://github.com/noetinger/TriviaGame">
+                    <h5>Trivia Game</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="padding-top:35px">
+        <div class="col-md-4" align="center">
+            <a href="https://noetinger.github.io/Word-Guess-Game/">
+                <img id="portfolio" src="images/word-guess.png" alt="word-guess" class="img-thumbnail">
+            </a>
+            <div id="image1">
+                <a href="https://github.com/noetinger/Word-Guess-Game">
+                    <h5>Word Guess</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4" align="center">
+            <a href="https://noetinger.github.io/gifTastic/">
+                <img id="portfolio" src="images/gifTastic.png" alt="gifTastic" class="img-thumbnail">
+            </a>
+            <div id="image1">
+                <a href="https://github.com/noetinger/gifTastic">
+                    <h5>Gif Tastic</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4" align="center">
+            <a href="https://noetinger.github.io/magic-8-ball/">
+                <img id="portfolio" src="images/magic-8-ball.png" alt="magic-8-ball" class="img-thumbnail">
+            </a>
+            <div id="image1">
+                <a href="https://github.com/noetinger/magic-8-ball">
+                    <h5>Magic 8 Ball</h5>
+                </a>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!--Footer-->
     <div class="footer"
-        style="margin-top: 25px; text-align:center; background-color: gray; border-top: 8px solid #4aaaa5; padding: 20px;">
-        Created by Nick Oetinger!
+        style="font-family: sans-serif; margin-top: 25px; text-align:center; background-color: #C7C7C7; border-top: 2px solid #A9C6D9;; padding: 20px;">
+        <a href="index.html" style="color:black">
+            Created by Nick Oetinger
+        </a>
+        |
+        <a href="https://www.linkedin.com/in/nicholas-oetinger-070456157/" style="color:black">
+            LinkedIn Profile
+        </a>
+        |
+        <a href="https://github.com/noetinger" style="color:black">
+            GitHub Profile
+        </a>
     </div>
-
 </body>
 
 </html>
