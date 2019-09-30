@@ -42,7 +42,7 @@ h5{
     box-shadow: 0 0 10px yellow;
 }
 
-.app-link:hover{
+.social-media:hover, .app-link:hover{
     transform: scale(1.1);
 }
 
