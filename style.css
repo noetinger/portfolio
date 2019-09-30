@@ -12,14 +12,14 @@ h5{
     font-size: 12px;
 }
 
-a:hover, img:hover{
+a:hover, .app-link:hover{
     background-color: yellow;
     -moz-box-shadow: 0 0 10px yellow;
     -webkit-box-shadow: 0 0 10px yellow;
     box-shadow: 0 0 10px yellow;
 }
 
-img:hover{
+.app-link:hover{
     transform: scale(1.1);
 }
 
