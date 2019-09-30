@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
 
     <!--Favicon Link-->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
     <!--Bootstrap Link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,111 +25,519 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" type=text/css href="style.css">
+
+    <!-- Font Awesome Link-->
+    <script src="https://kit.fontawesome.com/71752fe8b4.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body style="background-color: #F7F7F7">
+<body>
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg" style="background-color: #F7F7F7; border-bottom: 2px solid #cccccc;">
-        <a class="navbar-brand" style="color: black; font-family: sans-serif;" href="index.html">Nick
-            Oetinger</a>
+    <!-- Nav Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#top-content">Nick Oetinger</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <a id="icon" href="https://www.linkedin.com/in/nicholas-oetinger-070456157/" target="_blank">
-            <i class="fab fa-linkedin" href="https://www.linkedin.com/in/nicholas-oetinger-070456157/"
-                target="_blank"></i>
-        </a>
-        <div id="icon-spacer"></div>
-        <a href="https://github.com/noetinger" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
-            <ul class="navbar-nav" align="right">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio </a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li> -->
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!--Main Content Section-->
 
-    <!-- About Me Header-->
-    <div class="row" style="background-color:#EBF1F2; border-bottom: 2px solid #cccccc">
-        <div class="col-md-12" align="center">
-            <br>
-            <img id="my-image" src="images/AmericanFlag.jpg" alt="Nick Oetinger">
-            <h1 style="color: black;">Nick Oetinger</h1>
-            <h2 style="color: #737373;"> Full Stack Web Developer</h2>
-            <br>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-8" align="center">
-            <br>
-            <h3>About Me:</h3>
-            <p>
-                Nick Oetinger, a native to Buffalo, NY, a graduate of SUNY Oswego, and transplant to Charlotte, NC in
-                2018. I am a lover of running, rock climbing, hiking, and anything adventurous.
-            </p>
-            <p>
-                I spent 3 years teaching Technology and coaching Track at a public high school in Binghamton, NY.
-                Following my teaching career, I spent a year working with 3D Printers
-                and Additive Manufacturing Solutions at Duncan-Parnell in Charlotte, NC. Now, after completing a 6 month
-                Full Stack Web Development
-                Bootcamp at UNC Charlotte, I am ready to begin my journey as a Web Developer.
-            </p>
-            <p>
-                I consider myself an experienced and accomplished technologist with a plethora of technical skills,
-                coupled with a problem
-                solving mindset, and am seeking to grow into a project manager/development role. I will always welcome
-                any opportunity
-                to learn and grow both personally and professionally.
-            </p>
-            <br>
-            <h5>
-                <a href="resources/Oetinger Resume.pdf" target="_blank" style="color: black">
-                    Click Here to view my Resume!
-                </a>
-            </h5>
-        </div>
-        <div class="col-md-2">
-        </div>
-    </div>
 
-    <!--Footer-->
-    <div class="footer"
-        style="font-family: sans-serif; margin-top: 25px; text-align:center; background-color: #C7C7C7; border-top: 2px solid #A9C6D9;; padding: 20px;">
-        <a href="index.html" style="color:black">
-            Created by Nick Oetinger
-        </a>
-        |
-        <a href="https://www.linkedin.com/in/nicholas-oetinger-070456157/" target="_blank" style="color:black">
-            LinkedIn Profile
-        </a>
-        |
-        <a href="https://github.com/noetinger" target="_blank" style="color:black">
-            GitHub Profile
-        </a>
-        |
-        <a href="resources/Oetinger Resume.pdf" target="_blank" style="color: black">
-            Resume
-        </a>
-    </div>
+    <!-- Top Content -->
+    <section id="top-content">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container mt-5 pt-5 pb-5 mb-3">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8 d-flex justify-content-center">
+                    <h1>Full Stack Web Developer</h1>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8 d-flex justify-content-center">
+                    <h2><strong>MongoDB | Express JS | React JS | Node JS</strong></h2>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <a href="#skills" class="btn topBtn" role="button">My Skills</a>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <a href="#portfolio" class="btn topBtn" role="button">My Portfolio</a>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </section>
+
+
+    <!-- My Skills -->
+    <section id="skills">
+        <div class="container mt-5 pt-5 pb-4 mb-4">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8 text-center">
+                    <h1 class="section-heading">My Skills</h1>
+                    <h5 class="section-subheading">My passions and my knowledge...</h5>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-10">
+                    <!-- Row 1 -->
+                    <div class="row mt-5 mb-5">
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fab fa-html5 fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">HTML5</h4>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fab fa-css3-alt fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">CSS3</h4>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fab fa-bootstrap fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">Bootstrap</h4>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fab fa-js-square fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">JavaScript</h4>
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="row mt-5 mb-5">
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fas fa-code fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">JQuery</h4>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">Handlebars</h4>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fas fa-address-book fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">MySQL</h4>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fas fa-database fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">MongoDB</h4>
+                        </div>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="row mt-5 mb-5">
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fab fa-node-js fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">Node.js</h4>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fas fa-shipping-fast fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">Express.js</h4>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fab fa-react fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">React.js</h4>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fas fa-code-branch fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">C#</h4>
+                        </div>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="row mt-5 mb-5">
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">GitHub</h4>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fas fa-server fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">Heroku</h4>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fas fa-recycle fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">Agile</h4>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fas fa-file-code fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <h4 class="skill-heading">API / Ajax</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container mt-5 pt-5 pb-4 mb-4">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8 text-center">
+                    <h1>Portfolio</h1>
+                    <h5 class="section-subheading">Here are some projects I have done...</h5>
+                    <h5 class="section-subheading">Click the image to see the app | Click the button to see the code
+                    </h5>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+            <!-- Row 1 -->
+            <div class="row mt-5 mb-5">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://positec-employee-auction.herokuapp.com/" target="_blank" class="app-link">
+                            <img src="images/positec.png" class="card-img-top" alt="Positec Auction App">
+                        </a>
+                        <div class="card-body portfolio-caption">
+                            <h4 class="portfolio-title">Positec Auction App</h4>
+                            <p class="portfolio-body">React, MongoDB, Express, Node</p>
+                            <a href="https://github.com/noetinger/project-3" target="_blank" class="btn btn-primary"
+                                role="button">See the
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://gentle-harbor-81182.herokuapp.com/" target="_blank" class="app-link">
+                            <img src="images/google-book-search.png" class="card-img-top" alt="Google Book Search">
+                        </a>
+                        <div class="card-body portfolio-caption">
+                            <h4 class="portfolio-title">Google Book Search</h4>
+                            <p class="portfolio-body">React, MongoDB, Express, Node</p>
+                            <a href="https://github.com/noetinger/ReactGoogleBookSearch" target="_blank"
+                                class="btn btn-primary" role="button">See the Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://noetinger.github.io/Clicky-Game/" target="_blank" class="app-link">
+                            <img src="images/clicky-game.png" class="card-img-top" alt="Clicky-Game">
+                        </a>
+                        <div class="card-body portfolio-caption">
+                            <h4 class="portfolio-title">Cicky Game</h4>
+                            <p class="portfolio-body">React</p>
+                            <br>
+                            <a href="https://github.com/noetinger/Clicky-Game" target="_blank" class="btn btn-primary"
+                                role="button">See the
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row mt-5 mb-5">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://floating-tor-12717.herokuapp.com/" target="_blank" class="app-link">
+                            <img src="images/crafty-drafter.png" class="card-img-top" alt="Crafty Drafter">
+                        </a>
+                        <div class="card-body portfolio-caption">
+                            <h4 class="portfolio-title">Crafty Drafter</h4>
+                            <p class="portfolio-body">Handlebars, Node, MySQL, JavaScript</p>
+                            <br>
+                            <a href="https://github.com/noetinger/project2" target="_blank" class="btn btn-primary"
+                                role="button">See the
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://guarded-peak-90047.herokuapp.com/" target="_blank" class="app-link">
+                            <img src="images/eat-da-berger.png" class="card-img-top" alt="Eat Da Berger">
+                        </a>
+                        <div class="card-body portfolio-caption">
+                            <h4 class="portfolio-title">Eat Da Berger</h4>
+                            <p class="portfolio-body">Handlebars, Node, JavaScript</p>
+                            <br>
+                            <br>
+                            <a href="https://github.com/noetinger/burger" target="_blank" class="btn btn-primary"
+                                role="button">See the
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://fierce-depths-94593.herokuapp.com/" target="_blank" class="app-link">
+                            <img src="images/buffalo-news-scraper.png" class="card-img-top" alt="Buffalo News Scraper">
+                        </a>
+                        <div class="card-body portfolio-caption">
+                            <h4 class="portfolio-title">Buffalo News Scraper</h4>
+                            <p class="portfolio-body">Handlebars, MongoDB, Node, Express, JavaScript</p>
+                            <a href="https://github.com/noetinger/news-scraper" target="_blank" class="btn btn-primary"
+                                role="button">See the
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="row mt-5 mb-5">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://noetinger.github.io/Weather-Wear/ " target="_blank" class="app-link">
+                            <img src="images/weather-wear.png" class="card-img-top" alt="Weather Wear">
+                        </a>
+                        <div class="card-body portfolio-caption">
+                            <h4 class="portfolio-title">Weather Wear</h4>
+                            <p class="portfolio-body">JavaScript, JQuery</p>
+                            <a href="https://github.com/noetinger/Weather-Wear" target="_blank" class="btn btn-primary"
+                                role="button">See the
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://boiling-thicket-17459.herokuapp.com/" target="_blank" class="app-link">
+                            <img src="images/friend-finder.png" class="card-img-top" alt="Friend Finder">
+                        </a>
+                        <div class="card-body portfolio-caption">
+                            <h4 class="portfolio-title">Friend Finder</h4>
+                            <p class="portfolio-body">Node, Express, JQuery, JavaScript</p>
+                            <a href="https://github.com/noetinger/FriendFinder" target="_blank" class="btn btn-primary"
+                                role="button">See the
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://noetinger.github.io/trainScheduler/" target="_blank" class="app-link">
+                            <img src="images/train-scheduler.png" class="card-img-top" alt="Train Scheduler">
+                        </a>
+                        <div class="card-body portfolio-caption">
+                            <h4 class="portfolio-title">Train Scheduler</h4>
+                            <p class="portfolio-body">JavaScript, JQuery, Firebase</p>
+                            <a href="https://github.com/noetinger/trainScheduler" target="_blank"
+                                class="btn btn-primary" role="button">See the
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about-me">
+        <div class="container mt-5 pt-5 pb-4 mb-4">
+            <div class="row mb-4">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8 text-center">
+                    <h1>About Me</h1>
+                    <h5 class="section-subheading">How much does a Polar Bear weigh? Enough to break the ice...
+                    </h5>
+                    <!-- Add LinkedIn and GitHub -->
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+            <div class="row">
+                <!-- Picture of Me -->
+                <div class="col-md-5">
+                    <div class="col-md-12 d-flex justify-content-end">
+                        <img id="my-image" src="images/head-shot.jpg" alt="Nick Oetinger">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <p>
+                                Nick Oetinger, a native to Buffalo, NY, a graduate of SUNY Oswego, and transplant to
+                                Charlotte,
+                                NC in 2018. I am a lover of running, rock climbing, hiking, and anything adventurous.
+                            </p>
+                            <p>
+                                I spent 3 years teaching Technology and coaching Track at a public high school in
+                                Binghamton,
+                                NY.
+                                Following my teaching career, I spent a year working with 3D Printers
+                                and Additive Manufacturing Solutions at Duncan-Parnell in Charlotte, NC. Now, after
+                                completing a
+                                6 month Full Stack Web Development
+                                Bootcamp at UNC Charlotte, I am ready to begin my journey as a Web Developer.
+                            </p>
+                            <p>
+                                I consider myself an experienced and accomplished technologist with a plethora of
+                                technical
+                                skills,
+                                coupled with a problem
+                                solving mindset, and am seeking to grow into a developer role. I will always
+                                welcome any opportunity
+                                to learn and grow both personally and professionally.
+                            </p>
+                        </div>
+                        <div class="col-md-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container mt-5 pt-5 pb-4 mb-4">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8 text-center">
+                    <h1>Contact Me</h1>
+                    <h5 class="section-subheading">This section is a Work In Progress... Sorry for the inconvenience!</h5>
+
+                </div>
+                <div class="col-md-2">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Include LinkedIn, GitHub, and Resume -->
+
 </body>
 
 </html>
-
-<!--Put icons to left of Hamburger.-->
