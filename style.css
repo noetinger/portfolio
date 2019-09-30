@@ -35,7 +35,7 @@ h5{
     border-color: #cccccc
 }
 
-a:hover, .app-link:hover{
+.social-media:hover ,.nav-item:hover, .topBtn:hover, .code-btn:hover, .app-link:hover{
     background-color: yellow;
     -moz-box-shadow: 0 0 10px yellow;
     -webkit-box-shadow: 0 0 10px yellow;
