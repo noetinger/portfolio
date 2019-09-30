@@ -12,17 +12,6 @@ h5{
     font-size: 12px;
 }
 
-a:hover, .app-link:hover{
-    background-color: yellow;
-    -moz-box-shadow: 0 0 10px yellow;
-    -webkit-box-shadow: 0 0 10px yellow;
-    box-shadow: 0 0 10px yellow;
-}
-
-.app-link:hover{
-    transform: scale(1.1);
-}
-
 .topBtn{
     font-size: 25px;
     height: 80px;
@@ -42,8 +31,19 @@ a:hover, .app-link:hover{
 
 .app-link {
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-color: #cccccc
+}
+
+a:hover, .app-link:hover{
+    background-color: yellow;
+    -moz-box-shadow: 0 0 10px yellow;
+    -webkit-box-shadow: 0 0 10px yellow;
+    box-shadow: 0 0 10px yellow;
+}
+
+.app-link:hover{
+    transform: scale(1.1);
 }
 
 #my-image{
