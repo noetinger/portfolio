@@ -35,6 +35,14 @@ h5{
     border-color: #cccccc
 }
 
+.code-btn{
+  padding: 8px;
+  color: black;
+  background-color: #cccccc;
+  border: solid 2px lightslategray;
+  border-radius: 15px;
+}
+
 .social-media:hover ,.nav-item:hover, .topBtn:hover, .code-btn:hover, .app-link:hover{
     background-color: yellow;
     -moz-box-shadow: 0 0 10px yellow;
