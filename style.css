@@ -134,7 +134,8 @@ a:hover {
     letter-spacing:1px;
     font-size:2rem;
     box-sizing:border-box;
-    text-shadow: 2px 2px 3px lightgray;
+    text-shadow: 4px 4px 6px lightgray;
+    font-weight: bold;
   }
   .my-super-cool-btn span{
     position:relative;
@@ -142,8 +143,8 @@ a:hover {
     display:flex;
     align-items:center;
     justify-content:center;
-    width:165px;
-    height:165px;
+    width:180px;
+    height:180px;
   }
   .my-super-cool-btn span:before{
     content:'';
