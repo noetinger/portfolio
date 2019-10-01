@@ -12,13 +12,13 @@ h5{
     font-size: 12px;
 }
 
-.topBtn{
+/* .topBtn{
     font-size: 25px;
     height: 80px;
     width: 200px;
     padding-top: 20px;
     background-color: rgb(120, 185, 120);
-}
+} */
 
 .skill-heading{
     size:24px;
@@ -27,6 +27,11 @@ h5{
 
 .portfolio-caption {
     text-align: center;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .app-link {
@@ -40,18 +45,25 @@ h5{
   color: black;
   background-color: #cccccc;
   border: solid 2px lightslategray;
-  border-radius: 15px;
+  transition: all 0.3s ease 0s;
 }
 
-.social-media:hover ,.nav-item:hover, .topBtn:hover, .code-btn:hover, .app-link:hover{
+.code-btn:hover{
+  border-radius: 20px;
+  box-shadow: 0 0 25px red;
+  transition: all 0.3s ease 0s;
+}
+
+.social-media:hover ,.nav-item:hover, .topBtn:hover, .app-link:hover, .message-button:hover{
     background-color: yellow;
     -moz-box-shadow: 0 0 10px yellow;
     -webkit-box-shadow: 0 0 10px yellow;
-    box-shadow: 0 0 10px yellow;
+    box-shadow: 0 0 15px yellow;
 }
 
 .social-media:hover, .app-link:hover{
     transform: scale(1.1);
+    transition: all 0.3s ease 0s;
 }
 
 #my-image{
@@ -65,6 +77,10 @@ h5{
     background-image: url(images/mountain-background.jpg);
 }
 
+#skills, #about-me{
+  background-color: 	#F5F5F5;
+}
+
 #portfolio{
     background-image: url(images/mountain-background-2.jpg);
 }
@@ -74,34 +90,51 @@ h5{
 }
 
 /* Contact Submit Button */
-button {
-    background-color:lightgreen;
+.message-button {
+  border-radius: 4px;
+  background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.message-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.message-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.message-button:hover span {
+  padding-right: 25px;
+}
+.message-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
-button:hover{
-    background-color: yellow;
-    -moz-box-shadow: 0 0 10px yellow;
-    -webkit-box-shadow: 0 0 10px yellow;
-    box-shadow: 0 0 10px yellow;
-}
 
-
-/* Fancy Button */
-#wrapper{
-    width:100vw;
-    height:100vh;
-    box-sizing:border-box;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
+/* Top Buttons (Skills and Portfolio) */
   .my-super-cool-btn{
     position:relative;
     text-decoration:none;
-    color:#fff;
+    color:black;
     letter-spacing:1px;
     font-size:2rem;
     box-sizing:border-box;
+    text-shadow: 2px 2px 3px lightgray;
   }
   .my-super-cool-btn span{
     position:relative;
@@ -109,8 +142,8 @@ button:hover{
     display:flex;
     align-items:center;
     justify-content:center;
-    width:200px;
-    height:200px;
+    width:165px;
+    height:165px;
   }
   .my-super-cool-btn span:before{
     content:'';
