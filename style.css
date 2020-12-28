@@ -1,66 +1,371 @@
-a:hover, img:hover{
-    background-color: #80A7BF;
-    border-radius: 15%;
+body{
+    font-family: Georgia, Times, 'Times New Roman', serif;
 }
+/* sans-serif */
+/* Georgia, Times, 'Times New Roman', serif */
 
-i{
-    font-size: 26px;
-    color: black;
-}
-
-h1{
-    font-family: sans-serif;
-    font-size: 50px;
-}
-
-h2{
-    font-family: sans-serif;
-    font-size: 36px;
-}
-
-h3{
-    font-family: sans-serif;
-    font-size: 28px;
-}
 h4{
-    font-family: sans-serif;
-    font-size: 12px;
+    font-weight: bold;
 }
 
 h5{
-    font-family: sans-serif;
-    color: black;
+    font-size: 12px;
 }
 
-.nav-link{
-    font-family: sans-serif;
-    color: black;
-}
-
-#portfolio{
-    height: 200px;
+/* .topBtn{
+    font-size: 25px;
+    height: 80px;
     width: 200px;
-    border: 2px solid #A9C6D9;
+    padding-top: 20px;
+    background-color: rgb(120, 185, 120);
+} */
+
+.skill-heading{
+    size:24px;
+    text-align: center;
+}
+
+.portfolio-caption {
+    text-align: center;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-link {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #cccccc
+}
+
+.code-btn{
+  padding: 8px;
+  color: black;
+  background-color: #cccccc;
+  border: solid 2px lightslategray;
+  transition: all 0.3s ease 0s;
+}
+
+.code-btn:hover{
+  border-radius: 20px;
+  box-shadow: 0 0 25px red;
+  transition: all 0.3s ease 0s;
+}
+
+.social-media:hover ,.nav-item:hover, .topBtn:hover, .app-link:hover, .message-button:hover{
+    background-color: yellow;
+    -moz-box-shadow: 0 0 10px yellow;
+    -webkit-box-shadow: 0 0 10px yellow;
+    box-shadow: 0 0 15px yellow;
+}
+
+.social-media:hover, .app-link:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
 }
 
 #my-image{
-    height: 200px;
-    width: 200px;
+    height: 385px;
+    width: 300px;
     border-radius: 50%;
     border: 4px solid #cccccc;
 }
 
-#image1{
-    font-family: sans-serif;
-    position: relative;
-    background-color: #A9C6D9;
-    width: 200px;
-    Height: 40px;
-    text-align: center;
-    bottom: 60px;
-    padding-top:8px;
+#top-content{
+    background-image: url(images/mountain-background.jpg);
 }
-#icon-spacer{
-    margin-left: 8px;
-    margin-right: 8px;
+
+#skills, #about-me{
+  background-color: 	#F5F5F5;
 }
+
+#portfolio{
+    background-image: url(images/mountain-background-2.jpg);
+}
+
+#contact{
+    background-image: url(images/sky-background.jpg);
+}
+
+/* Contact Submit Button */
+.message-button {
+  border-radius: 4px;
+  background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.message-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.message-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.message-button:hover span {
+  padding-right: 25px;
+}
+.message-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* Top Buttons (Skills and Portfolio) */
+  .my-super-cool-btn{
+    position:relative;
+    text-decoration:none;
+    color:black;
+    letter-spacing:1px;
+    font-size:2rem;
+    box-sizing:border-box;
+    text-shadow: 4px 4px 6px lightgray;
+    font-weight: bold;
+  }
+  .my-super-cool-btn span{
+    position:relative;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:180px;
+    height:180px;
+  }
+  .my-super-cool-btn span:before{
+    content:'';
+    width:100%;
+    height:100%;
+    display:block;
+    position:absolute;
+    border-radius:100%;
+    border:7px solid #F3CF14;
+    box-sizing:border-box;
+    transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+    box-shadow: 0 30px 85px rgba(0,0,0,0.14), 0 15px 35px rgba(0,0,0,0.14);
+  }
+  .my-super-cool-btn:hover span:before{
+    transform:scale(0.8);
+    box-shadow: 0 20px 55px rgba(0,0,0,0.14), 0 15px 35px rgba(0,0,0,0.14);
+  }
+  .my-super-cool-btn .dots-container{
+    opacity:0;
+    animation: intro 1.6s;
+    animation-fill-mode: forwards;
+  }
+  .my-super-cool-btn .dot{
+    width:8px;
+    height:8px;
+    display:block;
+    background-color:#F3CF14;
+    border-radius:100%;
+    position:absolute;
+    transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+  }
+  .my-super-cool-btn .dot:nth-child(1){
+    top:50px;
+    left:50px;
+    transform:rotate(-140deg);
+    animation: swag1-out 0.3s;
+    animation-fill-mode: forwards;
+    opacity:0;
+  }
+  .my-super-cool-btn .dot:nth-child(2){
+    top:50px;
+    right:50px;
+    transform:rotate(140deg);
+    animation: swag2-out 0.3s;
+    animation-fill-mode: forwards;
+    opacity:0;
+  }
+  .my-super-cool-btn .dot:nth-child(3){
+    bottom:50px;
+    left:50px;
+    transform:rotate(140deg);
+    animation: swag3-out 0.3s;
+    animation-fill-mode: forwards;
+    opacity:0;
+  }
+  .my-super-cool-btn .dot:nth-child(4){
+    bottom:50px;
+    right:50px;
+    transform:rotate(-140deg);
+    animation: swag4-out 0.3s;
+    animation-fill-mode: forwards;
+    opacity:0;
+  }
+  .my-super-cool-btn:hover .dot:nth-child(1){
+    animation: swag1 0.3s;
+    animation-fill-mode: forwards;
+  }
+  .my-super-cool-btn:hover .dot:nth-child(2){
+    animation: swag2 0.3s;
+    animation-fill-mode: forwards;
+  }
+  .my-super-cool-btn:hover .dot:nth-child(3){
+    animation: swag3 0.3s;
+    animation-fill-mode: forwards;
+  }
+  .my-super-cool-btn:hover .dot:nth-child(4){
+    animation: swag4 0.3s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes intro {
+     0% {
+       opacity:0;
+    }
+    100% {
+       opacity:1;
+    }
+  }
+  @keyframes swag1 {
+     0% {
+       top:50px;
+       left:50px;
+       width:8px;
+    }
+    50% {
+      width:30px;
+      opacity:1;
+    }
+    100% {
+       top:20px;
+       left:20px;
+       width:8px;
+       opacity:1;
+    }
+  }
+  @keyframes swag1-out {
+     0% {
+       top:20px;
+       left:20px;
+       width:8px;
+    }
+    50% {
+       width:30px;
+      opacity:1;
+    }
+    100% {
+       top:50px;
+       left:50px;
+       width:8px;
+      opacity:0;
+    }
+  }
+  @keyframes swag2 {
+     0% {
+       top:50px;
+       right:50px;
+       width:8px;
+    }
+    50% {
+      width:30px;
+      opacity:1;
+    }
+    100% {
+       top:20px;
+       right:20px;
+       width:8px;
+       opacity:1;
+    }
+  }
+  @keyframes swag2-out {
+     0% {
+       top:20px;
+       right:20px;
+       width:8px;
+    }
+    50% {
+       width:30px;
+      opacity:1;
+    }
+    100% {
+       top:50px;
+       right:50px;
+       width:8px;
+      opacity:0;
+    }
+  }
+  @keyframes swag3 {
+     0% {
+       bottom:50px;
+       left:50px;
+       width:8px;
+    }
+    50% {
+      width:30px;
+      opacity:1;
+    }
+    100% {
+       bottom:20px;
+       left:20px;
+       width:8px;
+       opacity:1;
+    }
+  }
+  @keyframes swag3-out {
+     0% {
+       bottom:20px;
+       left:20px;
+       width:8px;
+    }
+    50% {
+       width:30px;
+      opacity:1;
+    }
+    100% {
+       bottom:50px;
+       left:50px;
+       width:8px;
+      opacity:0;
+    }
+  }
+  @keyframes swag4 {
+     0% {
+       bottom:50px;
+       right:50px;
+       width:8px;
+    }
+    50% {
+      width:30px;
+      opacity:1;
+    }
+    100% {
+       bottom:20px;
+       right:20px;
+       width:8px;
+       opacity:1;
+    }
+  }
+  @keyframes swag4-out {
+     0% {
+       bottom:20px;
+       right:20px;
+       width:8px;
+    }
+    50% {
+       width:30px;
+      opacity:1;
+    }
+    100% {
+       bottom:50px;
+       right:50px;
+       width:8px;
+      opacity:0;
+    }
+  }
+  
